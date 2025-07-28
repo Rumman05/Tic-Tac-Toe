@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="title">Tic Tac Toe</div>
+    
+    <div id="win-count">
+        <div id="player1-wincount"></div>
+        <div id="player2-wincount"></div>
+        <div id="draw-count"></div>
+    </div>
+
+    <div id="current-turn"></div>
+
+    <div id="gameboard"></div>
+
+    <div class="button-container">
+        <div class="link_wrapper">
+            <button id="start-button" class="animated-btn">Start Game</button>
+            <div class="icon start-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="link_wrapper">
+            <button id="reset-button" class="animated-btn reset-btn">Reset Game</button>
+            <div class="icon reset-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="inputs">
+        <input type="text" id="player1-name" placeholder="Player 1 Name">
+        <input type="text" id="player2-name" placeholder="Player 2 Name">
+    </div>
+
+    <div id="message"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
